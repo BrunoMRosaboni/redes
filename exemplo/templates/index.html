@@ -1,0 +1,36 @@
+<!doctype html>
+
+ <head>
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<title>REDES: Um exemplo de aplicação python na web</title>
+</head>	
+
+<div style="text-align: center; vertical-align: middle">
+
+	<h1>Bem-vindo ao experimento PYTHON + FLASK + HEROKU!</h1>
+	<br><br><br>
+	<h2>Computer Science Quotes</h1>
+	<br><br><br>
+	<h3>Como usar: Insira seu nome e receba frases de famosos cientistas da computação </h3>	
+	<h3>Observação: As frases estão sendo recebidas através da api fornecida pelo endereço http://quotes.stormconsultancy.co.uk/</h3>
+	<br><br><br><br><br><br><br>
+	
+    
+	<div class="col-md-4 col-md-offset-4">
+		<div>
+			<form action="{{ url_for('hello') }}" method=post class="form-inline">				
+				<div class="form-group">					
+					<label for="inputnome">Nome</label>			
+				</div>
+				<div class="form-group col-xs-30">					
+					<input class="form-control" id="inputnome" type="text" name="username" required/>
+				</div>
+				<div class="form-group">	
+					<input type="submit" name="submit" class="btn btn-primary" value="Randomizar"/>
+				</div>								
+			</form>
+		</div>
+	</div>	
+
+
+
