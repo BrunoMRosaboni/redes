@@ -1,1 +1,1 @@
-# redes
+# redes: Heroku + FLASK + Python
